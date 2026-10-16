@@ -163,6 +163,7 @@ body.tutor .tut{position:relative;z-index:3;box-shadow:0 0 0 3px #fff,0 0 22px 8
 @keyframes tflash{50%{background:var(--line);color:#14181d}}
 #tutHint{position:fixed;left:50%;top:calc(8px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:96;width:min(92vw,420px);background:#10151a;color:#fff;border:2px solid var(--line);padding:9px 12px;font-size:13px;line-height:1.35;text-align:center;pointer-events:none}
 @media (prefers-reduced-motion:reduce){body.tutor .tut{animation:none}}
+[hidden]{display:none!important}   /* скрытое прячется всегда, даже если у элемента свой display (окно, подсказки) */
 /* раскладка по реальному месту */
 .chipgoal{max-width:calc(46% - 6px)}   /* справа сверху карточки линий */
 .mg-goal{font-size:14px;background:rgba(242,194,48,.14);border-left:3px solid var(--line);padding:6px 9px}
