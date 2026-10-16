@@ -2521,6 +2521,8 @@ if(window.IntersectionObserver){
 }
 applyCut();
 window.addEventListener('resize',applyCut);   // панели Safari прячутся и появляются: пересчитываем
+// окна обучения (предложения, машины, этапы, итог) не сохраняются: после перезагрузки продолжаем с шага, который можно сделать
+if(tutOn()){if(G.trips===0)G.tut=0;else if(G.tut<5)G.tut=5;save()}
 if(G.trips===0) intro();
 requestAnimationFrame(frame);
 </script>
